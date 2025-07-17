@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, largest;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+    printf("Largest number is: %d\n", largest);
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        printf("%c is an alphabet.\n", ch) :
+        printf("%c is not an alphabet.\n", ch);
+    return 0;
+}
